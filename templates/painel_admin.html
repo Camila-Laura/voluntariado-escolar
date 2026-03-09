@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Administrador</title>
+    <link rel="stylesheet" href="static/CSS/painel_admin.css">
+</head>
+<body>
+    <div class="sidebar">
+        <div class="logo">Painel Admin</div>
+            <a href="{{ url_for('formulario_solicitante') }}">Cadastro Solicitante</a><br>
+            <a href="{{ url_for('tela_cadastro_voluntario') }}">Cadastro Voluntario</a><br>
+            <a href="{{ url_for('tabela_solicitante') }}">Visualizar Dados do Solicitante</a><br>
+            <a href="{{ url_for('tabela_voluntario') }}">Visualizar Dados do Voluntario</a><br>
+            <a href="{{ url_for('tabela_atendimentos') }}">Criar Atendimento</a><br>
+        </div>
+    </div>
+
+    <div class="topbar d-flex align-items-center justify-content-between">
+        <span class="painel">Painel do Administrador</span>
+    </div>
+
+    <div class="main">
+        <span>Bem-vindo, Admin</span>
+        <div class="anotacoes">
+            <h3>Faça suas Anotações</h3> 
+            <input type="text" placeholder="Anotações">
+        </div>
+    </div> 
+</body>
+</html>
