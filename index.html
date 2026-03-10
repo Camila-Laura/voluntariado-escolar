@@ -125,10 +125,10 @@
                     <button onclick="Login()" class="btn btn-primary btn-block fw-bold w-100">Login</button><br>
                     
                     <!-- verificação para vê se já tem administrador cadastrado  no sistema. Caso não tenha vai exibir a opção de criar conta -->
-                    {% if not admin_existente %}
+                    <!-- {% if not admin_existente %} -->
                         <p>Ainda não tem cadastro?</p>
                         <a href="{{ url_for('formulario_admin') }}">Criar Conta Administrador</a>
-                    {% endif %}
+                    <!-- {% endif %} -->
                 </form>
             </section>
         </div>
